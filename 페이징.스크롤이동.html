@@ -99,11 +99,12 @@
 
           //두번째 방법
           for(var i=0; i<totalNum; i++){
-            //console.log(i)
-            if(scroll > section[i].offsetTop - window.outerHeight/3  && scroll < section[i].offsetTop - window.outerHeight/3 + section[i].offsetHeight){
+            console.log(i)
+            if(scroll > section[i].offsetTop - window.outerHeight/3  
+            && scroll < section[i].offsetTop - window.outerHeight/3 + section[i].offsetHeight){
               pageNum = i;
               //console.log(scroll);
-              console.log(scroll, section[i].offsetTop - window.outerHeight/3);
+              console.log(scroll, section[i].offsetTop, section[i].offsetTop - window.outerHeight/3, section[i].offsetTop - window.outerHeight/3 + section[i].offsetHeight);
               break;
             }
             // if(scroll > section[i].offsetTop &&
